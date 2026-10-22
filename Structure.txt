@@ -1,0 +1,85 @@
+github/
+│   ├── 📁 workflows/
+│   │   ├── ci.yml                    # Main CI pipeline
+│   │   ├── release.yml               # Automated releases
+│   │   ├── ios-build.yml             # iOS specific builds
+│   │   ├── android-build.yml         # Android specific builds
+│   │   ├── deploy-web.yml            # PWA deployment
+│   │   └── dependency-review.yml     # Security scanning
+│   ├── 📁 ISSUE_TEMPLATE/
+│   │   ├── bug_report.yml            # Bug report form
+│   │   ├── feature_request.yml       # Feature request form
+│   │   └── config.yml                # Template config
+│   ├── 📁 PULL_REQUEST_TEMPLATE/
+│   │   └── pull_request_template.md  # PR template
+│   ├── CODEOWNERS                    # Code review assignments
+│   ├── CONTRIBUTING.md               # Contribution guidelines
+│   ├── FUNDING.yml                   # Sponsorship links
+│   └── SECURITY.md                   # Security policy
+├── 📁 android/                       # Android native project
+│   ├── app/
+│   │   ├── src/
+│   │   │   ├── main/
+│   │   │   │   ├── AndroidManifest.xml
+│   │   │   │   ├── java/com/sacredgeometry/app/
+│   │   │   │   └── res/
+│   │   │   └── test/
+│   │   └── build.gradle
+│   ├── fastlane/
+│   │   ├── Appfile
+│   │   └── Fastfile
+│   └── build.gradle
+├── 📁 ios/                          # iOS native project
+│   ├── App/
+│   │   ├── AppDelegate.swift
+│   │   ├── Info.plist
+│   │   ├── Assets.xcassets/
+│   │   └── Main.storyboard
+│   ├── fastlane/
+│   │   ├── Appfile
+│   │   └── Fastfile
+│   └── Podfile
+├── 📁 src/                          # Web source code
+│   ├── index.html
+│   ├── 📁 components/
+│   │   ├── SacredGeometry.jsx
+│   │   ├── FrequencySelector.jsx
+│   │   ├── BreathingGuide.jsx
+│   │   └── AudioVisualizer.jsx
+│   ├── 📁 hooks/
+│   │   ├── useGyroscope.js
+│   │   ├── useAudio.js
+│   │   └── useHaptics.js
+│   ├── 📁 utils/
+│   │   ├── frequencies.js
+│   │   ├── geometries.js
+│   │   └── native-bridge.js
+│   ├── 📁 styles/
+│   │   ├── sacred.css
+│   │   └── animations.css
+│   └── 📁 assets/
+│       ├── icons/
+│       └── sounds/
+├── 📁 tests/                        # Test suites
+│   ├── unit/
+│   ├── e2e/
+│   └── fixtures/
+├── 📁 docs/                         # Documentation
+│   ├── ARCHITECTURE.md
+│   ├── API.md
+│   ├── PRIVACY.md
+│   └── TROUBLESHOOTING.md
+├── 📁 scripts/                      # Build scripts
+│   ├── build-icons.js
+│   ├── generate-screenshots.js
+│   └── version-bump.js
+├── 📄 capacitor.config.ts
+├── 📄 package.json
+├── 📄 tsconfig.json
+├── 📄 vite.config.ts
+├── 📄 tailwind.config.js
+├── 📄 .eslintrc.js
+├── 📄 .prettierrc
+├── 📄 .gitignore
+├── 📄 LICENSE
+└── 📄 README.md
